@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>阿东的知识库</title>
-
+    <link rel="stylesheet" href="https://ruanzhaodong.github.io/ruan/CSS/css.css">
 </head>
 
 <body>
@@ -19,13 +19,39 @@
 
         <div id="target"></div>
 
+        <script>
 
+        </script>
 
     </div>
 
     <!-- 主内容区域 -->
     <div class="main-content">
-
+        <h1>组建物理局域网</h1>
+        <P>一、两台终端设备(至少两台)<P>
+        <P>二、交换机</P>
+        <P>三、路由器<P>
+        <P>四、网线(双绞线)</P>
+        <P>五、电源</P>
+        <hr>
+        <P style="text-align: center">连接图</P>
+        <div style="text-align: center">
+            <img style="border: 3px solid black" src="https://ruanzhaodong.github.io/ruan/有线局域网(物理图).png" width="600" height="300" alt="图片加载失败...">
+            <img style="border: 3px solid black" src="https://ruanzhaodong.github.io/ruan/ensp有线局域网(拓扑图).png" width="600" height="300" alt="图片加载失败...">
+        </div>
+        <hr>
+        <div style="display: flex;justify-content: center">
+            <div style="border: 3px solid black;width: 500px">
+                <P style="text-align: center;font-size: 20px;font-weight: 900">步骤</p>
+                <P>一、主机开机、交换机插上电源并开启、路由器插上电源并开启<B>(连通电源)</b>。</P>
+                <P>二、配置两台主机的ip地址、子网掩码<b>(配置主机ip、子网掩码)注意：不可随意配置，两台主机必须在同一网段。</b>。</P>
+                <P>二、两台主机网线接口 —>双绞线连接 ——>交换机接口<b>(运用双绞线 相互连接 主机与交换机)</b>。</P>
+                <P>三、交换机 ——> 双绞线连接 ——> 路由器接口(LAN口)<b>(运用双绞线 相互连接 交换机与路由器)</b></P>
+                <P>四、ping命令验证连通性，主机1 ——> 主机2。<b>(验证局域网是否搭建成功)</b></P>
+                <P>五、外网接口线  ——> 路由器(WAN口)。<b>(实现局域网访问因特网)</b></P>
+                <hr>
+            </div>
+        </div>
 </body>
 
 
