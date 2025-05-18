@@ -17,7 +17,7 @@
     <!-- 侧边栏 -->
     <div class="sidebar">
 
-        <div id="target"></div>
+        <div id="target">
 
         <script>
             async function loadHtmlFile(url)
@@ -41,7 +41,23 @@
 
     <!-- 主内容区域 -->
     <div class="main-content">
-        <\
+              <h1>ensp绘制有线局域网拓扑图</h1>
+        <hr>
+        <h3 style="text-align: center">拓扑图</h3>
+        <div style="text-align: center">
+            <img style="border: 3px solid black" src="https://ruanzhaodong.github.io/ruan/ensp有线局域网(拓扑图详细).png" width="600" height="300" alt="图片加载失败...">
+        </div>
+        <hr>
+        <div style="display: flex;justify-content: center">
+            <div style="border: 3px solid black;width: 500px">
+                <P style="text-align: center;font-size: 20px;font-weight: 900">步骤</p>
+                <P>一、放置两台主机(至少)、交换机、路由器，然后双绞线连接后，全部开启。<B>(绘制有线局域网拓扑图)</b>。</P>
+                <P>二、配置两台主机的ip地址、子网掩码<b>(配置主机ip、子网掩码)注意：不可随意配置，两台主机必须在同一网段。</b>。</P>
+                <P>三、配置路由器GE0/0/0接口的ip地址、子网掩码。<b>(配置网关)注意：不可随意配置，必须要与两台主机在同一网段。</b>。</P>
+                <P>四、配置两台主机网关，主机网关ip地址 == GE0/0/0接口的ip地址。</P>
+            </div>
+        </div>
+    </div>
 </body>
 
 
